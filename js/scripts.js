@@ -1,16 +1,14 @@
-// Bunch of random words.
-var randomWords = [
-    "cook",
-    "kid",
-    "telling",
-    "explore",
-    "tray"
-]; 
-
-// Pick from "randomWords"
+var randomWords = [ "fastidious", "cake", "available", "conflict", "helmet" ]; 
 var wordToGuess = randomWords[Math.floor(Math.random()*randomWords.length)];
+var wordCharacters = [];
 
-alert(wordToGuess);
+console.log("Type hangMan(); to start!");
 
+function hangMan() {
+    for( var i = 0; i < wordToGuess.length; i++ ) {
+        wordCharacters[i] = "_";
+    }
+    console.log(wordCharacters);
+}
 
 
