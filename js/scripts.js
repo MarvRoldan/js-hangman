@@ -11,6 +11,21 @@ function hangMan() {
     console.log( wordCharacters );
 }
 
+// MAKE FUNCTION TO GET USER TO INPUT A LETTER.
+
+function check ( guess ) {
+    var rightGuesses = 0;
+
+    for ( i = 0; i < wordToGuess.length; i++) {
+        if (wordToGuess[i] === guess) {
+            wordCharacters[i] = guess;
+            rightGuesses++;
+        }
+
+        // CAN WRITE FUNCTION TO CHECK IF GUESS IS WRONG. ADD STRIKES HERE.
+    }
+}
+
 function storeLetter( guess ) {
     var inputtedGuess = false;
 
