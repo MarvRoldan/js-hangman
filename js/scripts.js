@@ -1,5 +1,5 @@
 var list = [ "crossing", "organ", "past", "green", "insight" ];
-var randomWord = list[Math.floor(Math.random() * list.length)];
+var randomWord = list[ Math.floor( Math.random() * list.length ) ];
 var letterCorrect = [];
 
 start = () => {
@@ -28,7 +28,7 @@ letterCheck = () => {
 
         if ( match ) return; 
     
-        if ( letterWrong.indexOf(letterGuess ) < 0 ) {
+        if ( letterWrong.indexOf( letterGuess ) < 0 ) {
             letterWrong.push( letterGuess );
             document.getElementById( "wrongGuess" ).innerHTML = letterWrong.join(" ");
         }
