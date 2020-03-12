@@ -25,6 +25,7 @@ letterCheck = () => {
                  match = true;
             }
         }
+
         if ( match ) return; 
     
         if ( letterWrong.indexOf(letterGuess ) < 0 ) {
