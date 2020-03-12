@@ -15,7 +15,6 @@ function hangMan() {
 
 function check ( guess ) {
     var rightGuesses = 0;
-<<<<<<< HEAD
 
     for ( i = 0; i < wordToGuess.length; i++) {
         if (wordToGuess[i] === guess) {
@@ -40,8 +39,6 @@ function storeLetter( guess ) {
         }
     }
 }
-=======
->>>>>>> 391989268dbd1bf16fffe8ca061cf0e19b7b78d7
 
     for ( i = 0; i < wordToGuess.length; i++) {
         if (wordToGuess[i] === guess) {
@@ -66,3 +63,4 @@ function storeLetter( guess ) {
         }
     }
 }
+
